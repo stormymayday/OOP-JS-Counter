@@ -6,10 +6,10 @@ function Counter(element, value) {
 }
 
 // Function that gets the element
-function getElement(elementSelection) {
+function getElement(selection) {
 
     // Getting the element
-    const element = document.querySelector(elementSelection);
+    const element = document.querySelector(selection);
 
     console.log(element);
 
