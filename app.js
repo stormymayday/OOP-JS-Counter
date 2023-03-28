@@ -4,6 +4,7 @@ function Counter(element, value) {
     // Properties
     this.counter = element;
     this.value = value;
+    this.resetBtn = element.querySelector('.reset');
 
 }
 
