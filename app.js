@@ -7,6 +7,8 @@ function Counter(element, value) {
     this.resetBtn = element.querySelector('.reset');
     this.increaseBtn = element.querySelector('.increase');
     this.decreaseBtn = element.querySelector('.decrease');
+    this.valueDOM = element.querySelector('.value');
+    console.log(this.valueDOM);
 
 }
 
