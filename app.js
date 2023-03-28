@@ -1,7 +1,9 @@
 // Constructor function
 function Counter(element, value) {
 
-    console.log(element, value);
+    // Properties
+    this.counter = element;
+    this.value = value;
 
 }
 
