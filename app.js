@@ -5,6 +5,7 @@ function Counter(element, value) {
     this.counter = element;
     this.value = value;
     this.resetBtn = element.querySelector('.reset');
+    this.increaseBtn = element.querySelector('.increase');
 
 }
 
