@@ -5,8 +5,11 @@ function Counter(element, value) {
 
 }
 
-// Creating the first-counter
+// Instantiating the first-counter
 const firstCounter = new Counter(getElement('.first-counter'), 100);
+
+// Instantiating the second-counter
+const secondCounter = new Counter(getElement('.second-counter'), 200);
 
 // Function that gets the element
 function getElement(selection) {
