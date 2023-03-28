@@ -9,6 +9,11 @@ function Counter(element, value) {
 function getElement(elementSelection) {
 
     // Getting the element
-    const element = document.querySelector(selection);
+    const element = document.querySelector(elementSelection);
+
+    console.log(element);
 
 }
+
+// Getting the first-counter
+getElement('.first-counter');
