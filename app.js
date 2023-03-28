@@ -16,6 +16,8 @@ function getElement(selection) {
         return element;
     }
 
+    // If element does not exist (null), throw error
+    throw new Error(`Please check "${selection}" selector. No such element exists.`);
 }
 
 // Getting the first-counter
