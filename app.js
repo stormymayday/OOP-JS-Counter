@@ -11,7 +11,10 @@ function getElement(selection) {
     // Getting the element
     const element = document.querySelector(selection);
 
-    console.log(element);
+    // If element exists (not null), return it
+    if (element) {
+        return element;
+    }
 
 }
 
