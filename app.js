@@ -5,6 +5,9 @@ function Counter(element, value) {
 
 }
 
+// Creating the first-counter
+const firstCounter = new Counter(getElement('.first-counter'), 100);
+
 // Function that gets the element
 function getElement(selection) {
 
@@ -19,6 +22,3 @@ function getElement(selection) {
     // If element does not exist (null), throw error
     throw new Error(`Please check "${selection}" selector. No such element exists.`);
 }
-
-// Getting the first-counter
-getElement('.first-counter');
