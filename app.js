@@ -16,6 +16,8 @@ function Counter(element, value) {
 // Increase
 Counter.prototype.increase = function () {
     console.log(this);
+    // Incraesing the value by 1
+    this.value++;
 }
 // Functions end
 
