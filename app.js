@@ -12,6 +12,13 @@ function Counter(element, value) {
 
 }
 
+// Functions start
+// Increase
+Counter.prototype.increase = function () {
+    console.log(this);
+}
+// Functions end
+
 // Instantiating the first-counter
 const firstCounter = new Counter(getElement('.first-counter'), 100);
 
