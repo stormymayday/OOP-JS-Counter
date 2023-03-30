@@ -33,10 +33,8 @@ function getElement(selection) {
 // increase - start
 Counter.prototype.increase = function () {
 
-    // Incraesing the value by 1
     this.value++;
 
-    // Setting valueDOM
     this.valueDOM.textContent = this.value;
 
 }
@@ -45,14 +43,22 @@ Counter.prototype.increase = function () {
 // decrease - start
 Counter.prototype.decrease = function () {
 
-    // Incraesing the value by 1
     this.value--;
 
-    // Setting valueDOM
     this.valueDOM.textContent = this.value;
 
 }
 // decrease - end
+
+// reset - start
+Counter.prototype.reset = function () {
+
+    this.value = 0;
+
+    this.valueDOM.textContent = this.value;
+
+}
+// reset - end
 
 // Functions - end
 
@@ -63,6 +69,8 @@ const firstCounter = new Counter(getElement('.first-counter'), 100);
 const secondCounter = new Counter(getElement('.second-counter'), 200);
 
 // firstCounter.increase();
-firstCounter.decrease();
+// firstCounter.decrease();
+firstCounter.reset();
 // secondCounter.increase();
-secondCounter.decrease();
+// secondCounter.decrease();
+secondCounter.reset();
