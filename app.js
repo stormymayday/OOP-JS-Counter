@@ -33,8 +33,6 @@ function getElement(selection) {
 // increase start
 Counter.prototype.increase = function () {
 
-    console.log(this);
-
     // Incraesing the value by 1
     this.value++;
 
@@ -51,3 +49,6 @@ const firstCounter = new Counter(getElement('.first-counter'), 100);
 
 // Instantiating the second-counter
 const secondCounter = new Counter(getElement('.second-counter'), 200);
+
+firstCounter.increase();
+secondCounter.increase();
