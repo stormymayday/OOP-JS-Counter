@@ -12,9 +12,9 @@ function Counter(element, value) {
 
 }
 
-// Functions start
+// Functions - start
 
-// getElement start
+// getElement - start
 function getElement(selection) {
 
     // Getting the element
@@ -28,9 +28,9 @@ function getElement(selection) {
     // If element does not exist (null), throw error
     throw new Error(`Please check "${selection}" selector. No such element exists.`);
 }
-// getElement end
+// getElement - end
 
-// increase start
+// increase - start
 Counter.prototype.increase = function () {
 
     // Incraesing the value by 1
@@ -40,9 +40,21 @@ Counter.prototype.increase = function () {
     this.valueDOM.textContent = this.value;
 
 }
-// increase end
+// increase - end
 
-// Functions end
+// decrease - start
+Counter.prototype.decrease = function () {
+
+    // Incraesing the value by 1
+    this.value--;
+
+    // Setting valueDOM
+    this.valueDOM.textContent = this.value;
+
+}
+// decrease - end
+
+// Functions - end
 
 // Instantiating the first-counter
 const firstCounter = new Counter(getElement('.first-counter'), 100);
@@ -50,5 +62,7 @@ const firstCounter = new Counter(getElement('.first-counter'), 100);
 // Instantiating the second-counter
 const secondCounter = new Counter(getElement('.second-counter'), 200);
 
-firstCounter.increase();
-secondCounter.increase();
+// firstCounter.increase();
+firstCounter.decrease();
+// secondCounter.increase();
+secondCounter.decrease();
