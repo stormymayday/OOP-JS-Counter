@@ -15,9 +15,15 @@ function Counter(element, value) {
 // Functions start
 // Increase
 Counter.prototype.increase = function () {
+
     console.log(this);
+
     // Incraesing the value by 1
     this.value++;
+
+    // Setting valueDOM
+    this.valueDOM.textContent = this.value;
+
 }
 // Functions end
 
