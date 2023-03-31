@@ -10,6 +10,9 @@ function Counter(element, value) {
     this.valueDOM = element.querySelector('.value');
     this.valueDOM.textContent = this.value;
 
+    // Bidning 'this' for all functions
+    this.increase = this.increase.bind(this);
+
 }
 
 // Functions - start
