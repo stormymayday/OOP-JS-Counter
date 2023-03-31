@@ -77,10 +77,3 @@ const firstCounter = new Counter(getElement('.first-counter'), 100);
 
 // Instantiating the second-counter
 const secondCounter = new Counter(getElement('.second-counter'), 200);
-
-// firstCounter.increase();
-// firstCounter.decrease();
-firstCounter.reset();
-// secondCounter.increase();
-// secondCounter.decrease();
-secondCounter.reset();
