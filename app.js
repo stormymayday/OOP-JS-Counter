@@ -16,6 +16,7 @@ function Counter(element, value) {
 
     // Event Listeners
     this.increaseBtn.addEventListener('click', this.increase);
+    this.decreaseBtn.addEventListener('click', this.decrease);
 
 }
 
