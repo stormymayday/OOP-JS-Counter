@@ -13,6 +13,7 @@ function Counter(element, value) {
     // Bidning 'this' such that it points to Counter
     this.increase = this.increase.bind(this);
     this.decrease = this.decrease.bind(this);
+    this.reset = this.reset.bind(this);
 
     // Event Listeners
     this.increaseBtn.addEventListener('click', this.increase);
