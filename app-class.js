@@ -58,3 +58,6 @@ function getElement(selection) {
     throw new Error(`Please check "${selection}" selector. No such element exists.`);
 }
 // getElement - end
+
+// Instantiating the first-counter
+const firstCounter = new Counter(getElement('.first-counter'), 100);
