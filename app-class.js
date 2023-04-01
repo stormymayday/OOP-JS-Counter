@@ -1,4 +1,5 @@
 class Counter {
+
     constructor(element, value) {
 
         // Properties
@@ -22,11 +23,19 @@ class Counter {
 
     }
 
-    // Methods
+    // Methods - start
+
     increase() {
         this.value++;
         this.valueDOM.textContent = this.value;
     }
+
+    decrease() {
+        this.value--;
+        this.valueDOM.textContent = this.value;
+    }
+
+    // Methods - end
 }
 
 // getElement - start
