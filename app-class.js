@@ -35,6 +35,11 @@ class Counter {
         this.valueDOM.textContent = this.value;
     }
 
+    reset() {
+        this.value = 0;
+        this.valueDOM.textContent = this.value;
+    }
+
     // Methods - end
 }
 
