@@ -61,3 +61,6 @@ function getElement(selection) {
 
 // Instantiating the first-counter
 const firstCounter = new Counter(getElement('.first-counter'), 100);
+
+// Instantiating the second-counter
+const secondCounter = new Counter(getElement('.second-counter'), 200);
