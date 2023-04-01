@@ -21,6 +21,12 @@ class Counter {
         this.resetBtn.addEventListener('click', this.reset);
 
     }
+
+    // Methods
+    increase() {
+        this.value++;
+        this.valueDOM.textContent = this.value;
+    }
 }
 
 // getElement - start
