@@ -1,5 +1,4 @@
-// Constructor function
-function Counter(element, value) {
+export function Counter(element, value) {
 
     // Properties
     this.counter = element;
@@ -23,22 +22,6 @@ function Counter(element, value) {
 }
 
 // Functions - start
-
-// getElement - start
-function getElement(selection) {
-
-    // Getting the element
-    const element = document.querySelector(selection);
-
-    // If element exists (not null), return it
-    if (element) {
-        return element;
-    }
-
-    // If element does not exist (null), throw error
-    throw new Error(`Please check "${selection}" selector. No such element exists.`);
-}
-// getElement - end
 
 // increase - start
 Counter.prototype.increase = function () {
@@ -70,10 +53,5 @@ Counter.prototype.reset = function () {
 }
 // reset - end
 
-// Functions - end
-
 // Instantiating the first-counter
 const firstCounter = new Counter(getElement('.first-counter'), 100);
-
-// Instantiating the second-counter
-const secondCounter = new Counter(getElement('.second-counter'), 200);
