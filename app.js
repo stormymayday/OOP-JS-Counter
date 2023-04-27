@@ -1,1 +1,1 @@
-console.log(`hello world`);
+import Counter from "./utils/class/class.js";
