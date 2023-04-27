@@ -1,5 +1,3 @@
-import getElement from "../getElement/getElement.js";
-
 class Counter {
 
     constructor(element, value) {
