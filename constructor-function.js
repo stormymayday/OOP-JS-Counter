@@ -52,6 +52,3 @@ Counter.prototype.reset = function () {
 
 }
 // reset - end
-
-// Instantiating the first-counter
-const firstCounter = new Counter(getElement('.first-counter'), 100);
