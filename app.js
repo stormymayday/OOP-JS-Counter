@@ -1,5 +1,5 @@
 import Counter from "./utils/class/class.js";
-import { Counter as CounterFC } from "./constructor-function.js";
+import { Counter as CounterFC } from "./utils/constructor-function/constructor-function.js";
 import getElement from "./utils/getElement/getElement.js";
 
 // Instantiating the first-counter using Counter constructor function:
