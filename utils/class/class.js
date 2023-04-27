@@ -45,6 +45,8 @@ class Counter {
     // Methods - end
 }
 
+export default Counter;
+
 // Instantiating the first-counter
 const firstCounter = new Counter(getElement('.first-counter'), 100);
 
